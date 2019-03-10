@@ -1,5 +1,7 @@
 # MediaBrowser
 
+Live Demo https://emmanueltsouris.github.io/media-browser/
+
 Media Browser is an updated version of [ng2-MediaBrowser](https://github.com/EmmanuelTsouris/ng2-MediaBrowser), an Angular 2 application I created to take a simple json list of media files and display them in a grid. When you select a thumbnail, a detail page is shown which lets you watch the video and read the description.
 
 I wrote the original to learn the Angular Cli, and figured it was time to update the app to a newer version of Angular.
