@@ -8,7 +8,7 @@ I wrote the original to learn the Angular Cli, and figured it was time to update
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.5.
 
-Thumbnails and Video content is stored in a seperate repo to keep this repo clean: https://github.com/EmmanuelTsouris/media-browser-content
+Thumbnails and Video content are stored in a seperate repo to keep this repo clean: https://github.com/EmmanuelTsouris/media-browser-content
 
 ## Development server
 
