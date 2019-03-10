@@ -1,0 +1,14 @@
+<mat-grid-list cols="4" rowHeight="4:3" gutterSize="10px">
+  <mat-grid-tile *ngFor="let media of mediaFiles$ | async">
+    <mat-card>
+      <a [routerLink]="['/watch', media.id]">
+        <img mat-card-image src="{{media.baseUrl}}{{media.thumbUrl}}" alt="Video Thumbnail">
+      </a>
+      <mat-card-content>
+        <mat-card-title>
+          {{media.name}}
+        </mat-card-title>
+      </mat-card-content>
+    </mat-card>
+  </mat-grid-tile>
+</mat-grid-list>
