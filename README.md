@@ -34,7 +34,13 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 Deployment is handled by [angular-cli-ghpages](https://github.com/angular-schule/angular-cli-ghpages).
 
-Run `ng deploy` and the project will be deployed to https://<username>.github.io/<repositoryname>
+Run `ng deploy --base-href=/media-browser/` and the project will be deployed to https://<username>.github.io/media-browser
+
+## Continous Deployment to GitHub Pages
+
+When a commit occurs to the GitHub repo, a GitHub action deploys the changes to ghpages.
+
+https://dev.to/jasonf/deploy-angular-to-github-pages-by-setting-up-a-workflow-in-github-171b
 
 ## Further help
 
