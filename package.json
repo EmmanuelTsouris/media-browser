@@ -10,7 +10,9 @@
     "e2e": "ng e2e"
   },
   "private": true,
-  "dependencies": {},
+  "dependencies": {
+    "angular-cli-ghpages": "^1.0.0-rc.2"
+  },
   "devDependencies": {
     "@angular-devkit/build-angular": "~12.2.3",
     "@angular/cli": "^12.2.3",
