@@ -11,6 +11,10 @@
   },
   "private": true,
   "dependencies": {
+    "@angular/core": "^12.2.3",
+    "@angular/material": "^12.2.3",
+    "@angular/platform-browser-dynamic": "^12.2.3",
+    "@angular/router": "^12.2.3",
     "angular-cli-ghpages": "^1.0.0-rc.2"
   },
   "devDependencies": {
