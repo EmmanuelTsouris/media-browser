@@ -10,7 +10,7 @@ Media Browser is an updated version of [ng2-MediaBrowser](https://github.com/Emm
 
 I wrote the original to learn the Angular Cli, and figured it was time to update the app to a newer version of Angular.
 
-This project was originally generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.5 and has been upgraded to each major version (8, 9, 10, 11, 12, 13, 14, 15, and 16) by using `https://update.angular.io/` as a guide.
+This project was originally generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.5 and has been upgraded to each major version (8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18) by using `https://update.angular.io/` as a guide.
 
 Thumbnails and Video content are stored in a seperate repo to keep this repo clean: https://github.com/EmmanuelTsouris/media-browser-content
 
