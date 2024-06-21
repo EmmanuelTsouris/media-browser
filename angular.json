@@ -66,18 +66,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "media-browser:build"
+            "buildTarget": "media-browser:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "media-browser:build:production"
+              "buildTarget": "media-browser:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "media-browser:build"
+            "buildTarget": "media-browser:build"
           }
         },
         "test": {
