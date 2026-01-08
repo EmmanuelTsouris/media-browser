@@ -8,9 +8,11 @@ Media Browser is an updated version of [ng2-MediaBrowser](https://github.com/Emm
 
 I wrote the original to learn the Angular Cli, and figured it was time to update the app to a newer version of Angular.
 
-This project was originally generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.5 and has been upgraded to each major version (8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18) by using `https://update.angular.io/` as a guide.
+This project was originally generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.5 and has been upgraded to each major version (8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21) by using `https://update.angular.io/` as a guide.
 
-Thumbnails and Video content are stored in a seperate repo to keep this repo clean: https://github.com/EmmanuelTsouris/media-browser-content
+**Current Version:** Angular v21 with the new application builder.
+
+Thumbnails and Video content are stored in a separate repo to keep this repo clean: https://github.com/EmmanuelTsouris/media-browser-content
 
 ## Development server
 
@@ -22,25 +24,33 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/media-browser/browser/` directory.
+
+For a production build, use:
+```bash
+ng build --configuration production
+```
+
+**Note:** Angular v21 uses the new application builder which outputs files to `dist/media-browser/browser/` instead of directly to `dist/media-browser/`.
 
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+To run tests once without watch mode:
+```bash
+ng test --watch=false
+```
 
 ## Deploy
 
-Deployment is handled by [angular-cli-ghpages](https://github.com/angular-schule/angular-cli-ghpages).
+Deployment is handled by [angular-cli-ghpages](https://github.com/angular-schule/angular-cli-ghpages) (v3.0.2+).
 
 Run `ng deploy --base-href=/media-browser/` and the project will be deployed to https://<username>.github.io/media-browser
 
-## Continous Deployment to GitHub Pages
+## Continuous Deployment to GitHub Pages
 
-When a commit occurs to the GitHub repo, a GitHub action deploys the changes to ghpages.
+When a commit is pushed to the `main` branch, a GitHub Actions workflow automatically deploys the changes to the `gh-pages` branch.
 
 https://dev.to/jasonf/deploy-angular-to-github-pages-by-setting-up-a-workflow-in-github-171b
 
