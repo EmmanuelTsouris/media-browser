@@ -9,10 +9,11 @@ import { Media } from '../media/media';
 @Component({
   selector: 'app-watch',
   templateUrl: './watch.component.html',
-  styleUrls: ['./watch.component.css']
+  styleUrls: ['./watch.component.css'],
+  standalone: false
 })
 export class WatchComponent implements OnInit {
-  media$: Observable<Media>;
+  media$!: Observable<Media | undefined>;
 
   constructor(
     private route: ActivatedRoute,
@@ -23,7 +24,7 @@ export class WatchComponent implements OnInit {
   ngOnInit() {
     this.media$ = this.route.paramMap.pipe(
       switchMap((params: ParamMap) =>
-        this.service.getMedia(params.get('id')))
+        this.service.getMedia(params.get('id') ?? ''))
     );
   }
 

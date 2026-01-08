@@ -1,6 +1,6 @@
 /* global styles */
 
-@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "@angular/material/prebuilt-themes/indigo-pink.css";
 
 body { 
     font-family: Roboto, Arial, sans-serif;

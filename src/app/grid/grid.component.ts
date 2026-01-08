@@ -9,10 +9,11 @@ import { Media } from '../media/media';
 @Component({
   selector: 'app-grid',
   templateUrl: './grid.component.html',
-  styleUrls: ['./grid.component.css']
+  styleUrls: ['./grid.component.css'],
+  standalone: false
 })
 export class GridComponent implements OnInit {
-  mediaFiles$: Observable<Media[]>;
+  mediaFiles$!: Observable<Media[]>;
 
   constructor(
     private route: ActivatedRoute,
