@@ -6,7 +6,7 @@ describe('MediaService', () => {
   beforeEach(() => TestBed.configureTestingModule({}));
 
   it('should be created', () => {
-    const service: MediaService = TestBed.get(MediaService);
+    const service: MediaService = TestBed.inject(MediaService);
     expect(service).toBeTruthy();
   });
 });
