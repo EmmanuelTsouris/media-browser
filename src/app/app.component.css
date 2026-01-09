@@ -6,8 +6,19 @@
     flex: 1 1 auto;
 }
 
+.toolbar-title {
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 20px;
+    margin-left: 8px;
+}
+
 mat-toolbar a {
     text-decoration: none;
     font-weight: bolder;
+    color: white;
+}
+
+mat-toolbar button {
     color: white;
 }

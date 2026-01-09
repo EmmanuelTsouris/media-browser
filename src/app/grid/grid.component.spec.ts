@@ -2,6 +2,7 @@ import { waitForAsync, ComponentFixture, TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
+import { MatIconModule } from '@angular/material/icon';
 
 import { GridComponent } from './grid.component';
 
@@ -11,7 +12,7 @@ describe('GridComponent', () => {
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      imports: [ RouterTestingModule, MatGridListModule, MatCardModule ],
+      imports: [ RouterTestingModule, MatGridListModule, MatCardModule, MatIconModule ],
       declarations: [ GridComponent ]
     })
     .compileComponents();

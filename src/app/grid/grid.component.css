@@ -1,0 +1,62 @@
+.media-card {
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.media-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.thumbnail-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.thumbnail-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.thumbnail-container img {
+  width: 100%;
+  display: block;
+  transition: transform 0.3s ease-in-out;
+}
+
+.media-card:hover .thumbnail-container img {
+  transform: scale(1.05);
+}
+
+.play-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.media-card:hover .play-overlay {
+  opacity: 1;
+}
+
+.play-icon {
+  font-size: 72px;
+  width: 72px;
+  height: 72px;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  transform: scale(0.9);
+  transition: transform 0.2s ease-in-out;
+}
+
+.media-card:hover .play-icon {
+  transform: scale(1);
+}

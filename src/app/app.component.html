@@ -1,8 +1,14 @@
 <mat-toolbar color="primary">
     <mat-toolbar-row>
-        <span><a [routerLink]="['/']">{{title}}</a> </span>
+        <button mat-icon-button [routerLink]="['/']" matTooltip="Home">
+            <mat-icon>home</mat-icon>
+        </button>
+        <span class="toolbar-title" [routerLink]="['/']">{{title}}</span>
         <span class="spacer"></span>
-        <span><a mat-button class="navbar-link" routerLink="about">About</a></span>
+        <button mat-button routerLink="about">
+            <mat-icon>info</mat-icon>
+            About
+        </button>
     </mat-toolbar-row>
 </mat-toolbar>
 
