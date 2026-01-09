@@ -2,6 +2,8 @@ import { TestBed, waitForAsync } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { MatTooltipModule } from '@angular/material/tooltip';
 import { AppComponent } from './app.component';
 
 describe('AppComponent', () => {
@@ -10,7 +12,9 @@ describe('AppComponent', () => {
       imports: [
         RouterTestingModule,
         MatToolbarModule,
-        MatButtonModule
+        MatButtonModule,
+        MatIconModule,
+        MatTooltipModule
       ],
       declarations: [
         AppComponent
@@ -34,6 +38,6 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('mat-toolbar a').textContent).toContain('Media Browser');
+    expect(compiled.querySelector('.toolbar-title').textContent).toContain('Media Browser');
   });
 });
