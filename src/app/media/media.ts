@@ -1,8 +1,8 @@
-export class Media {
-    id!: number;
-    name!: string;
-    description!: string;
-    baseUrl!: string;
-    thumbUrl!: string;
-    mediaUrl!: string;
-  }
+export interface Media {
+  id: number;
+  name: string;
+  description: string;
+  baseUrl: string;
+  thumbUrl: string;
+  mediaUrl: string;
+}
