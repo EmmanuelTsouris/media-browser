@@ -12,6 +12,14 @@ This project was originally generated with [Angular CLI](https://github.com/angu
 
 **Current Version:** Angular v21 with the new application builder.
 
+## Features
+
+- **Angular Material Design** - Modern UI components including toolbars, cards, icons, and buttons
+- **Video Gallery** - Grid layout with thumbnails and interactive hover effects
+- **Play Icon Overlays** - Visual feedback with animated play icons on thumbnail hover
+- **Video Playback** - Full-featured video player with poster images and controls
+- **Responsive Navigation** - Icon-based toolbar with tooltips for better UX
+
 Thumbnails and Video content are stored in a separate repo to keep this repo clean: https://github.com/EmmanuelTsouris/media-browser-content
 
 ## Development server
